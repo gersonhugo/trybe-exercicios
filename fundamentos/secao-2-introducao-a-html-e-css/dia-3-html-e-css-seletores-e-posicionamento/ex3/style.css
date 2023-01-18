@@ -1,0 +1,19 @@
+h1 {
+  text-align: center;
+}
+
+p {
+  text-align: center;
+}
+
+li:hover {
+  background-color: aqua;
+}
+
+li:active {
+  font-family: 'Courier New', Courier, monospace;
+}
+
+.lista {
+  list-style: none;
+}

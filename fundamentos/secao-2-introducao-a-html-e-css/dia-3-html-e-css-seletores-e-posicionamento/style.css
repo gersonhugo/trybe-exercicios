@@ -1,0 +1,33 @@
+div:hover{
+  color: rgb(199, 52, 52);
+  border-color: rgb(21, 185, 122);
+  border-style: dashed;
+}
+
+div:nth-of-type(1) {
+  color: aqua;
+}
+
+div:nth-of-type(2) {
+  color: chartreuse;
+}
+
+div:nth-of-type(3) {
+  color: blue;
+}
+
+div:nth-of-type(4) {
+  color: rgb(46, 44, 48);
+}
+
+div:nth-of-type(5) {
+  color: rgb(212, 169, 169);
+}
+
+div:nth-of-type(3) {
+  height: 100px;
+}
+
+div:nth-child(odd) h3 {
+  font-style: italic;
+}
