@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Travel Form</title>
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-GLhlTQ8iRABdZLl6O3oVMWSktQOp6b7In1Zl3/Jr59b6EGGoI1aFkw7cmDA6j6gD" crossorigin="anonymous">
+</head>
+<body>
+  <h1 class="display-5 text-muted" id="title">Formulário Trybe Travel</h1>
+  <form action="" method="get" id="main-form">
+    <label for="fullName">Nome Completo:</label>
+    <input class="form-control" type="text" id="fullName" name="nome" maxlength="40">
+    <br>
+    <label for="email">E-mail:</label>
+    <input class="form-control" type="email" id="email" name="email" maxlength="50">
+    <br>
+    <label for="">Destino Preferido:</label>
+    <input type="radio" class="form-check-input" name="destinations" id="cidade" value="cidade">
+    <label for="cidade">Cidade</label> 
+    <input type="radio" class="form-check-input" name="destinations" id="campo" value="campo">
+    <label for="campo">Campo</label>
+    <input type="radio" class="form-check-input" name="destinations" id="praia" value="praia">
+    <label for="praia">Praia</label>
+    <input type="radio" class="form-check-input" name="destinations" id="montanha" value="montanha">
+    <label for="montanha">Montanha</label>
+    <br>
+    <label for="question">Por que você deveria ser a pessoa desenvolvedora a ganhar o concurso TrybeTrip?</label>
+    <br>
+    <textarea class="form-control" name="questao" id="question" cols="65" rows="10" maxlength="500"></textarea>
+    <br>
+    <label for="date">Qual a melhor data para realizar sua viagem?</label>
+    <input class="form-control" type="date" id="date" name="data">
+    <br>
+    <label for="promo"> <input type="checkbox" class="form-check-input" id="promo" name="oportunidades">Gostaria de receber outras incríveis oportunidades oferecidas pela Trybe?</label>
+    <br>
+    <label for="agreement"><input type="checkbox" class="form-check-input" id="agreement">Concordo que imagens das minhas férias poderão ser usadas na divulgação de concursos futuros.</label>
+    <br>
+    <button class="btn btn-success" type="submit" id="submit-btn" disabled>Enviar</button>
+    <button class="btn btn-warning" type="reset" id="clear-btn">Limpar</button>
+  </form>
+
+  <script src="script.js"></script>
+</body>
+</html>
