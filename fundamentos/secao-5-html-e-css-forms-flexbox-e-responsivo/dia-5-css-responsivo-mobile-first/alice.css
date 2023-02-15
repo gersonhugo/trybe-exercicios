@@ -1,0 +1,27 @@
+html {
+    box-sizing: border-box;
+  }
+  
+  *, *:before, *:after {
+    box-sizing: inherit;
+  }
+
+  .container {
+    display: flex;
+  }
+
+  @media screen and (max-width: 400px) {
+    .container {
+        flex-direction: column;
+    }
+    
+    body {
+        font-size: large;
+        margin: 20px;
+        background-color: rgb(242, 250, 250);
+        font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    }
+    h1 {
+        font-size: larger;
+    }
+  }
