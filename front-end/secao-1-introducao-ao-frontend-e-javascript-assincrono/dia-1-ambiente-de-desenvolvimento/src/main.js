@@ -1,4 +1,5 @@
 import validator from 'validator';
+import './style.css';
 
 const valor = document.getElementById('valor');
 const tipo = document.getElementById('tipo');

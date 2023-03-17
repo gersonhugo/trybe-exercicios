@@ -1,0 +1,31 @@
+body {
+    background-color: rgba(41, 41, 41, 0.842);
+    color: #e7e7e7;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    font-size: large;
+    min-height: 100vh;
+}
+
+input {
+    background-color: rgb(31, 32, 32);
+    color: aliceblue;
+    font-size: large;
+}
+
+select {
+    background-color: rgb(31, 32, 32);
+    color: aliceblue;
+    font-size: large;
+}
+
+button {
+    padding: 10px;
+    background-color: rgb(31, 32, 32);
+    color: aliceblue;
+    font-size: large;
+    border-radius: 10px;
+}
