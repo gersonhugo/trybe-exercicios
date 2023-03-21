@@ -1,8 +1,10 @@
 import Swal from 'sweetalert2';
+import './style.css'
 
 const button = document.querySelector('button');
 const input = document.querySelector('input');
 const ul = document.querySelector('ul');
+const h4 = document.querySelector('h4');
 
 const render = (data) => {
     ul.innerHTML = '';
@@ -11,9 +13,10 @@ const render = (data) => {
         const [coin, value] = element;
         console.log(coin, value);
         const li = document.createElement('li');
-        li.innerHTML = `${coin} ${value}`;
+        li.innerHTML = `${coin} - ${value.toFixed(3)}`;
         ul.append(li);
     });
+    h4.innerHTML = `Valores referentes a 1 ${data.base}`
 };
 
 const click = () => {
