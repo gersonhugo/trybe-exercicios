@@ -14,17 +14,26 @@ class App extends React.Component {
     this.handleChange = this.handleChange.bind(this);
   }
 
-  handleChange(event) {
+  handleChange(target) {
+    const { name, value } = target;
     this.setState({
-      nome: event.target.value,
+      [name]: value,
+
     })
   }
 
   render() {
+const {genero} = this.state;
+
     return (
       <form>
         <label htmlFor='genero'>Gênero</label>
-        <select id='genero' name='genero'>
+        <select
+          id='genero'
+          name='genero'
+          onChange={this.handleChange}
+          value='genero'
+        >
           <option>
             Masculino
           </option>
@@ -51,6 +60,7 @@ class App extends React.Component {
         <textarea
           id='obs'
           name='obs'
+          onChange={this.handleChange}
         >
         </textarea>
       </form>
